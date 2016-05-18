@@ -1,0 +1,21 @@
+body{
+	background-color: #232323;
+}
+
+.square{
+	width: 30%;									/* Each square takes up 30% of width of outer container*/
+	background-color: blue;
+	padding-bottom: 30%;						/* Gap between bottom of page and bottom of squares */
+	float: left;
+	margin: 1.66%;								/* puts a gap or margin between each square div of 1.66% */
+}
+
+#container{
+	max-width: 600px;
+	margin: 0 auto;								/* Centres the div container*/
+}
+
+h1{
+	color:white;
+	text-align: center;
+}

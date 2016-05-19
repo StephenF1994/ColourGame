@@ -1,5 +1,7 @@
 body{
 	background-color: #232323;
+	margin: 0;
+	font-family: "Montserrat", "Avenir";
 }
 
 .square{
@@ -7,17 +9,37 @@ body{
 	background-color: blue;
 	padding-bottom: 30%;						/* Gap between bottom of page and bottom of squares */
 	float: left;
-	margin: 1.66%;								/* puts a gap or margin between each square div of 1.66% */
+	margin: 1.66%;							/* puts a gap or margin between each square div of 1.66% */
+	border-radius: 50%;
+	transition:background 1.0s;
+	-webkit-transition::background 1.0s;
+	-moz-transition::background 1.0s;
+
 }
 
 #container{
 	max-width: 600px;
-	margin: 0 auto;								/* Centres the div container*/
+	margin: 35px auto;								/* Centres the div container*/
 }
 
 h1{
 	color:white;
 	text-align: center;
+	background-color: steelblue;
+	margin: 0;
+	font-weight: normal;
+	text-transform: uppercase;
+	line-height: 1.1;
+	padding: 20px 0;
+}
+
+#ColourDisplay{
+	font-size: 200%
+}
+
+#message{
+	display: inline-block;
+	width: 20%;
 }
 
 
@@ -27,4 +49,29 @@ h1{
 	color: black;
 
 
+}
+
+.selected{
+	background-color: blue;
+}
+
+button{
+	border: none;
+	background: none;
+	text-transform: uppercase;
+	height: 100%;
+	font-weight: 700;
+	color: steelblue;
+	letter-spacing: 1.2px;
+	font-size: inherit;
+	transition: all 0.8s;
+	-webkit-transition:all 0.8s;
+	-moz-transition:all 0.8s;
+	outline: none;
+
+}
+
+button:hover{
+	color: white;
+	background-color: steelblue;
 }
